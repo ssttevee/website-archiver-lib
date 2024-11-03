@@ -1,0 +1,98 @@
+{
+  "name": "website-archiver-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf *.js **/*.js *.d.ts **/*.d.ts *.map **/*.map",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "website",
+    "web",
+    "site",
+    "archiver",
+    "archive",
+    "downloader",
+    "download",
+    "clone",
+    "cloner",
+    "scraper",
+    "scrape",
+    "library",
+    "lib"
+  ],
+  "author": "ssttevee <stevyo99@yahoo.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "cheerio": "^1.0.0",
+    "typescript": "^5.6.3"
+  },
+  "optionalDependencies": {
+    "cheerio": "*"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./archive": {
+      "import": "./archive.js",
+      "require": "./archive.js",
+      "types": "./archive.d.ts"
+    },
+    "./download": {
+      "import": "./download.js",
+      "require": "./download.js",
+      "types": "./download.d.ts"
+    },
+    "./download/node": {
+      "import": "./download/node.js",
+      "require": "./download/node.js",
+      "types": "./download/node.d.ts"
+    },
+    "./extensions": {
+      "import": "./extensions.js",
+      "require": "./extensions.js",
+      "types": "./extensions.d.ts"
+    },
+    "./fetch": {
+      "import": "./fetch.js",
+      "require": "./fetch.js",
+      "types": "./fetch.d.ts"
+    },
+    "./links": {
+      "import": "./links.js",
+      "require": "./links.js",
+      "types": "./links.d.ts"
+    },
+    "./links/css": {
+      "import": "./links/css.js",
+      "require": "./links/css.js",
+      "types": "./links/css.d.ts"
+    },
+    "./links/default": {
+      "import": "./links/default.js",
+      "require": "./links/default.js",
+      "types": "./links/default.d.ts"
+    },
+    "./links/html": {
+      "import": "./links/html.js",
+      "require": "./links/html.js",
+      "types": "./links/html.d.ts"
+    }
+  },
+  "files": [
+    "**/*.js",
+    "**/*.d.ts",
+    "**/*.map"
+  ]
+}
