@@ -10,6 +10,7 @@ export interface HTMLMatcher {
 export const defaultMatchers: HTMLMatcher[] = [
   { selector: "a", attr: "href" },
   { selector: 'link[rel="stylesheet"]', attr: "href" },
+  { selector: 'link[rel="shortcut icon"]', attr: "href" },
   { selector: "img", attr: "src" },
   { selector: "img", attr: "srcset", regex: /(?:^|,)([^\s]+)(?:\s+|$)/g },
 ];
